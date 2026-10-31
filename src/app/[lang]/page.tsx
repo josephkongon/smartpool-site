@@ -66,6 +66,9 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
               <Link href={to("/reserve")} className="btn btn-ghost">
                 {h.ctaReserve} <span aria-hidden="true">→</span>
               </Link>
+              <a href={site.rankingUrl} className="btn btn-ranking" target="_blank" rel="noopener">
+                <span aria-hidden="true">🏆</span> {h.ctaRanking} <span aria-hidden="true">↗</span>
+              </a>
             </div>
           </div>
         </div>

@@ -51,6 +51,7 @@ const fr: Dictionary = {
     ctaBar: "Carte du bar",
     ctaRestaurant: "Carte du restaurant",
     ctaReserve: "Billard & PlayStation",
+    ctaRanking: "Classement des joueurs",
     stats: [
       { value: "4", label: "Billards & postes de jeu" },
       { value: "7j/7", label: "Ouvert tous les jours" },

@@ -86,6 +86,8 @@ h2{font-size:clamp(2.2rem,5vw,3.9rem);}
 .btn-outline{border:1.5px solid var(--line-strong); color:var(--ink);}
 .btn-outline:hover{border-color:var(--ink);}
 .btn-ghost{border:1.5px solid rgba(244,240,232,.45); color:var(--paper); backdrop-filter:blur(8px);}
+.btn-ranking{background:var(--felt); color:var(--paper); box-shadow:inset 0 0 0 1.5px rgba(242,182,48,.6);}
+.btn-ranking:hover{background:var(--felt-bright); box-shadow:inset 0 0 0 1.5px var(--gold);}
 .btn-ghost:hover{border-color:var(--paper); background:rgba(244,240,232,.1);}
 
 /* ---------- Images: lazy fade-in, cover frames, hover zoom ---------- */

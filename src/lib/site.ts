@@ -9,6 +9,7 @@ export const site = {
   whatsappHref: "https://wa.me/237696983834",
   email: "smartpool2023@gmail.com",
   juiceEmail: "smartpooljuice2026@gmail.com",
+  rankingUrl: "https://ranking.smartpoolcm.com/",
   social: {
     instagram: "https://www.instagram.com/smartpool237",
     instagramQr: "https://www.instagram.com/smartpool237?stkn=MTdqamdkcm1hMGo2Mg%3D%3D&utm_source=qr",

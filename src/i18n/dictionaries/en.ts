@@ -50,6 +50,7 @@ const en = {
     ctaBar: "Bar menu",
     ctaRestaurant: "Restaurant menu",
     ctaReserve: "Billiard & PlayStation",
+    ctaRanking: "Player Ranking",
     stats: [
       { value: "4", label: "Billiard & game stations" },
       { value: "7/7", label: "Open every day" },
