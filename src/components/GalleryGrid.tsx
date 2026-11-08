@@ -4,7 +4,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import LazyImage from "./LazyImage";
 
-export type GalleryPhoto = { src: string; size?: "tall" | "wide" };
+export type GalleryPhoto = { id: string; src: string; thumb: string; size?: "tall" | "wide" };
 
 interface GalleryGridProps {
   photos: GalleryPhoto[];
@@ -44,9 +44,9 @@ export default function GalleryGrid({ photos, labels }: GalleryGridProps) {
   return (
     <>
       <div className="gallery-page-grid">
-        {photos.map(({ src, size }, i) => (
+        {photos.map(({ id, src, thumb, size }, i) => (
           <a
-            key={src}
+            key={id}
             href={src}
             className={size ? `g-item img-frame g-${size}` : "g-item img-frame"}
             aria-label={`${labels.viewFull} — ${labels.photoAlt} ${i + 1}`}
@@ -57,7 +57,7 @@ export default function GalleryGrid({ photos, labels }: GalleryGridProps) {
               open(i);
             }}
           >
-            <LazyImage src={src} alt="" />
+            <LazyImage src={thumb} alt="" />
           </a>
         ))}
       </div>
@@ -79,7 +79,7 @@ export default function GalleryGrid({ photos, labels }: GalleryGridProps) {
       >
         {index !== null && (
           <>
-            <img key={photos[index].src} src={photos[index].src} alt={`${labels.photoAlt} ${index + 1}`} className="lightbox-img" />
+            <img key={photos[index].id} src={photos[index].src} alt={`${labels.photoAlt} ${index + 1}`} className="lightbox-img" />
             <button type="button" className="lb-btn lb-close" onClick={close} aria-label={labels.close}>
               ✕
             </button>
